@@ -8,13 +8,14 @@ body{
     color: white;
     font-family: sans-serif;
     width: 100vw;
+    overflow-x: hidden;
 }
 /* navigation */
 .content{
-    width: 95%;
+    width: 95vw;
     margin: 0 auto;
 }
-#about{
+#about-nav{
     color: rgb(201, 201, 25);
     margin-right: 3rem;
 }
@@ -50,6 +51,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 85%;
+    margin-bottom: 5rem;
 }
 .text-left{
     width: 53vw;
@@ -102,6 +104,55 @@ body{
 }
 
 
+/* About section */
+.about-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3rem;
+}
+.head {
+    text-align: center;
+}
+.head > h3{
+    margin-bottom: -0.7rem;
+    font-size: 1.5rem;
+}
+.head > img{
+    width: 7rem;
+}
+/* About content */
+.about-content{
+    display: flex;
+    padding: 4rem;
+
+}
+
+.about-intro{
+    padding-left:  4rem;
+    margin-top: 4.5rem;
+}
+.about-intro > h3 {
+    margin-bottom: 2rem;
+}
+.about-intro > p{
+    margin-bottom: 3rem;
+    width: 78%;
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+.about-intro > button{
+    width: 8rem;
+    border: none;
+    height: 2.7rem;
+    background-color: rgb(201, 201, 25);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 /* Mobile view */
 @media (max-width: 767.98px){
     .top-nav{
@@ -122,6 +173,7 @@ body{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-bottom: 3rem;
     }
     .text-left{
         width: 100%;
@@ -156,5 +208,30 @@ body{
         width: 100%;
         margin-left: 0;
         margin-top: -1rem;
+    }
+
+    /* About section */
+    
+    .about-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-img{
+        height: 20rem;
+        width: 90vw;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 auto;
+      
+    }
+    .about-intro {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .about-intro p {
+        line-height: normal;
+        width: 100%;
     }
 }

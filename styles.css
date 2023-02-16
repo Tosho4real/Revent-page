@@ -151,8 +151,11 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
+
+/* Resume Section */
 .resume{
     width: 100%;
+    margin-bottom: 4rem;
 }
 .resume-content{
     display: flex;
@@ -181,10 +184,52 @@ body{
     font-size: 0.8rem;
 }
 
+/* Porfolio */
+.portfolio{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.portfolio > nav > ul{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.portfolio > nav > ul> li{
+    list-style: none;
+    margin: 0.5rem 1rem;
+    padding-right: 2rem;
+    cursor: pointer;
+
+}
+.portfolio button{
+    width: 4rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.portfolio-img{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
 /* Mobile view */
 @media (max-width: 767.98px){
     .top-nav{
-        display: none;
+        position: absolute;
+        top: 4rem;
+        padding: 0 1rem;
+        
+    }
+    .top-nav li{
+        padding: 0 0.7rem 0 0;
+        margin: 0;
+        text-align: center;
+        font-size: small;
+        
     }
     .logo{
         height: 2rem;
@@ -262,10 +307,24 @@ body{
         line-height: normal;
         width: 100%;
     }
-        .resume-left{
-            width: 55%;
-        }
-        .resume-right{
-            width: 43%;
-        }
+    /* Resume Section */
+    .resume-left{
+        width: 55%;
+    }
+    .resume-right{
+        width: 43%;
+    }
+    /* Portfolio Section */
+    .portfolio> nav> ul> li {
+        padding-right: 0;
+        margin: 0.5rem 0.4rem;
+    }
+    .portfolio-img {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .img-dis{
+        display: none;
+    }
 }

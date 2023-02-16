@@ -10,6 +10,9 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+input:focus, textarea:focus{
+    outline: none;
+}
 /* navigation */
 .content{
     width: 95vw;

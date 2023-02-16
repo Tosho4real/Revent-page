@@ -151,7 +151,35 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
-
+.resume{
+    width: 100%;
+}
+.resume-content{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    justify-content: space-between;
+}
+.resume-left, .resume-right{
+    border-left: 3px solid rgb(201, 201, 25);
+    padding-left: 1rem;
+}
+.resume-left{
+    width: 70%;
+}
+.resume-right{
+    width: 20%;
+}
+.resume-content h4{
+    margin-bottom: 0.8rem;
+}
+.resume-content h5{
+    margin-bottom: 0.5rem;
+}
+.resume-content p{
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
 
 /* Mobile view */
 @media (max-width: 767.98px){
@@ -234,4 +262,10 @@ body{
         line-height: normal;
         width: 100%;
     }
+        .resume-left{
+            width: 55%;
+        }
+        .resume-right{
+            width: 43%;
+        }
 }

@@ -129,12 +129,13 @@ input:focus, textarea:focus{
 .about-content{
     display: flex;
     padding: 4rem;
-
 }
 
 .about-intro{
     padding-left:  4rem;
     margin-top: 4.5rem;
+    height: 60vh;
+    overflow: hidden;
 }
 .about-intro > h3 {
     margin-bottom: 2rem;

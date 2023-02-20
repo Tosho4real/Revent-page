@@ -304,6 +304,12 @@ input:focus, textarea:focus{
 
 /* Mobile view */
 @media (max-width: 767.98px){
+    body{
+        overflow-x: hidden;
+    }
+    .content{
+        overflow-x: hidden;
+    }
     #about-nav{
         margin-right: 5rem;
     }
